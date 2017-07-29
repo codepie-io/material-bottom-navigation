@@ -1,0 +1,70 @@
+@import "../variables/variables";
+@import "../mixins/mixins";
+
+// ==========  Bottom Navigation  ========== //
+
+//Bottom Tab Menu
+.md-bottom-navigation{
+  position: fixed;
+  z-index:9;
+  bottom: 0;
+  left:0;
+  width: 100%;
+  height: $bottom-tab-height;
+  border-top:1px solid rgba(0,0,0,.12);
+  background:#fff;
+  display: flex;
+  flex-direction: row;
+  @media (min-width: $screen-tablet-breakpoint) {
+    display: none;
+  }
+  &.has-button{
+    background:transparent;
+    border-top:none;
+    .md-button{
+      height: $bottom-tab-height;
+      line-height: $bottom-tab-height;
+    }
+  }
+
+  &__item{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 4px 16px;
+    color: rgba(0,0,0,.54);
+    font-size: 11px;
+    line-height: 1.5;
+    &.is-active{
+      color: unquote("rgb(#{$color-primary})");
+    }
+  }
+
+}
+.md-bottom-tab__item{
+
+}
+.md-bottom-tab li{
+  display: flex;
+  align-self:stretch;
+  .md-bottom-tab__item{
+    &::before{
+      font-family:'Material Icons';
+      font-size: 24px;
+      margin-bottom: -4px;
+    }
+    &.md-icon-home::before{
+      content: 'home';
+    }
+    &.md-icon-fav::before{
+      content: 'favorite';
+    }
+    &.md-icon-more::before{
+      content: 'more_horiz';
+    }
+    &.md-icon-date::before{
+      content: 'date_range';
+    }
+  }
+}

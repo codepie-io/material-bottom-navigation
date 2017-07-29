@@ -1,0 +1,13 @@
+{
+  "/mix.js": "/mix.js",
+  "/src/js/drawer.js": "/src/js/drawer.js",
+  "/docs/js/drawer.js": "/docs/js/drawer.js",
+  "/docs/css/drawer.css": "/docs/css/drawer.css",
+  "/src/css/drawer.css": "/src/css/drawer.css",
+  "/dist/css/drawer.css": "/dist/css/drawer.css",
+  "/dist/js/drawer.js": "/dist/js/drawer.js",
+  "/dist/css/bottom-sheets.css": "/dist/css/bottom-sheets.css",
+  "/docs/css/bottom-sheets.css": "/docs/css/bottom-sheets.css",
+  "/docs/js/bottom-sheet.js": "/docs/js/bottom-sheet.js",
+  "/docs/css/bottom-sheet.css": "/docs/css/bottom-sheet.css"
+}
